@@ -1,0 +1,26 @@
+/*
+ * File:   lab_1.c
+ * Course: Основы программирования (C)
+ * Student: Иванов И.И. Group: 15xx
+ * Teacher: Повышев В.В.
+ * Created on 10 Сентябрь 2013 г., 21:06
+ * Description: Program entry point.
+ */
+
+#include <stdio.h>
+// объявляем константу - для длинны вводимой строки
+#define LENGHT 80
+int main(void) {
+    char str[LENGHT];// объявляем массив символов длинны LENGHT для помещения в него строки, вводимой пользователем
+    int x;// и переменную целочисленного типа для помещения числа, вводимого пользователем
+    printf("Enter a string of length not more than %d characters:", LENGHT);// приглашение ко вводу строки
+    gets(str);// получение строки
+    printf("Enter a integer number:");// приглашение ко вводу числа
+    scanf("%d", &x);// получение числа
+    printf("You typed:");// уведомление о выводе строки
+    printf("%s\n", str);// введенная строка
+    printf("You entered a number:");// уведомление о выводе числа
+    printf("%d\n", x);//вывод числа
+    return 0;
+}
+
